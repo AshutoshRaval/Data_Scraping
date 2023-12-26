@@ -25,15 +25,21 @@ Follow these steps to use the Wikipedia Page Scraper:
    ```python
    url = 'https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue'
    
-3. **Import the Package:**
-   Start by importing the necessary functions from the `web_scraper` package.
+3. **Fetch the HTML Content:**
+   Use the fetch_page function to download the page content.
 
    ```python
-   from web_scraper import fetch_page, parse_table, save_to_csv
+   html_content = fetch_page(url)
+   if not html_content:
+    print("Failed to fetch the webpage.")
+
    
-4. **Import the Package:**
-   Start by importing the necessary functions from the `web_scraper` package.
+4. **Parse the Page Content:**
+   Once you have the HTML content, use the parse_table function to extract the data from the table.
 
    ```python
-   from web_scraper import fetch_page, parse_table, save_to_csv
+   df = parse_table(html_content)
+   if df.empty:
+    print("No data extracted from the page.")
+
 
