@@ -37,9 +37,18 @@ Follow these steps to use the Wikipedia Page Scraper:
 4. **Parse the Page Content:**
    Once you have the HTML content, use the parse_table function to extract the data from the table.
 
-   ```python
-   df = parse_table(html_content)
-   if df.empty:
-    print("No data extracted from the page.")
+
+## Contributing
+Contributions to this project are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Acknowledgments
+
+This project would not have been possible without the following resources and contributions:
+
+- **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/):** For providing an excellent tool for parsing HTML and XML documents.
+- **[Pandas](https://pandas.pydata.org/):** For their powerful data manipulation and analysis tools, which made handling and storing the scraped data straightforward.
+- **[Requests](https://requests.readthedocs.io/en/master/):** For making HTTP requests simpler and more human-friendly.
+- **Wikipedia Contributors:** For compiling and maintaining the data on the [List of largest companies in the United States by revenue](https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue), which served as our primary data source.
+- **[GitHub]([https://github.com/](https://github.com/AlexTheAnalyst/PythonYouTubeSeries/tree/main)):** For hosting our project and enabling collaborative development.
 
 
