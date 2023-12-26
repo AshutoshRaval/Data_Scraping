@@ -9,5 +9,13 @@ This project is a simple Python web scraper that extracts data from Wikipedia pa
 - Saves the extracted data into a CSV file.
 
 
-## Installation
-from web_scraper import fetch_page, parse_table, save_to_csv
+## Usage
+
+Follow these steps to use the Wikipedia Page Scraper:
+
+1. **Import the Package:**
+   Start by importing the necessary functions from the `web_scraper` package.
+
+   ```python
+   from web_scraper import fetch_page, parse_table, save_to_csv
+
