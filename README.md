@@ -7,3 +7,7 @@ This project is a simple Python web scraper that extracts data from Wikipedia pa
 - Fetches HTML content from a specified Wikipedia page.
 - Parses and extracts table data using BeautifulSoup.
 - Saves the extracted data into a CSV file.
+
+
+## Installation
+from web_scraper import fetch_page, parse_table, save_to_csv
